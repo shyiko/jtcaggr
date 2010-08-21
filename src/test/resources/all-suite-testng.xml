@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="all-suite">
+    <test name="all">
+        <packages>
+            <package name="com.appspot.jtcaggr"/>
+            <package name="com.appspot.jtcaggr.crawler"/>
+            <package name="com.appspot.jtcaggr.jdo"/>
+            <package name="com.appspot.jtcaggr.jdo.dao"/>
+            <package name="com.appspot.jtcaggr.parser"/>
+            <package name="com.appspot.jtcaggr.subscribing"/>
+            <package name="com.appspot.jtcaggr.update"/>
+        </packages>
+    </test>
+</suite>

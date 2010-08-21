@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <channel>
+        <title>Pipeline</title>
+        <link>
+            http://www.topcoder.com/tc
+        </link>
+        <language>en-us</language>
+        <pubDate>
+            Sat, 14 Aug 2010 05:30:31
+        </pubDate>
+		<description>
+			TopCoder Active contest RSS
+		</description>
+		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://www.topcoder.com/tc" type="application/rss+xml" />
+        
+            <item>
+                <title>
+                    UI Prototype Competition - Hestia B2B &#034;Template and Search&#034; Merge 24hr Prototype 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013885
+                </link>
+                <description>
+                    Registration starts: 2010-08-13 00:01:48.118
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013885
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    UI Prototype Competition - Hestia B2B Prototype (Cart) 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013935
+                </link>
+                <description>
+                    Registration starts: 2010-08-13 10:01:46.309
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013935
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Specification - PayPal Blackberry Library Specification 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013947
+                </link>
+                <description>
+                    Registration starts: 2010-08-13 13:01:24.460
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013947
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Vesta Showroom Consultation Smart GWT Client 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013966
+                </link>
+                <description>
+                    Registration starts: 2010-08-13 17:00:30.642
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013966
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - System and Application Log Archiving 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013145
+                </link>
+                <description>
+                    Registration starts: 2010-08-13 18:43:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013145
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Hestia B2B My Lists Order Data Access 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013582
+                </link>
+                <description>
+                    Registration starts: 2010-08-13 21:01:35.514
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013582
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - FLAG REVERSAL JOURNAL Batch Job 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013556
+                </link>
+                <description>
+                    Registration starts: 2010-08-13 21:22:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013556
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - File Display and error correction utility - Entities 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013959
+                </link>
+                <description>
+                    Registration starts: 2010-08-13 22:00:39.745
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013959
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Assembly Competition - Direct - Software Submission Viewer 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013946
+                </link>
+                <description>
+                    Registration starts: 2010-08-14 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013946
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Assembly Competition - Direct Submission Viewer Release 3 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013945
+                </link>
+                <description>
+                    Registration starts: 2010-08-14 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013945
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Studio Web Design - Hestia B2B &#034;My Company&#034; Updates
+                </title>
+                <link>
+                    http://studio.topcoder.com/?module=ViewContestDetails&amp;ct=1001835
+                </link>
+                <description>
+                    Registration starts: 2010-08-14 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-studio-1001835
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - TopCoder Copilot Selection Contest Module Architecture 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013533
+                </link>
+                <description>
+                    Registration starts: 2010-08-14 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013533
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Studio Web Design - TopCoder Direct Copilot Selection Contest storyboard
+                </title>
+                <link>
+                    http://studio.topcoder.com/?module=ViewContestDetails&amp;ct=1001783
+                </link>
+                <description>
+                    Registration starts: 2010-08-14 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-studio-1001783
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Assembly Competition - Studio Declaration Module Assembly 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013971
+                </link>
+                <description>
+                    Registration starts: 2010-08-14 20:56:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013971
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - Hesita B2B FOLA System Architecture pt 3 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013592
+                </link>
+                <description>
+                    Registration starts: 2010-08-14 22:04:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013592
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Test Scenarios - Review Process Improvements Bug Hunt 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30010821
+                </link>
+                <description>
+                    Registration starts: 2010-08-15 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30010821
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Hestia B2B Quote To Order 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013590
+                </link>
+                <description>
+                    Registration starts: 2010-08-15 02:49:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013590
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Vesta IT Self Service Admin Request Form Fields WYSIWYG Editor 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013545
+                </link>
+                <description>
+                    Registration starts: 2010-08-15 09:25:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013545
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Specification - BH WWPRT Report Generation Specification 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30010491
+                </link>
+                <description>
+                    Registration starts: 2010-08-16 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30010491
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Hestia B2B My Lists Struts Actions 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013584
+                </link>
+                <description>
+                    Registration starts: 2010-08-16 01:17:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013584
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - FSS Module Architecture 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013964
+                </link>
+                <description>
+                    Registration starts: 2010-08-16 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013964
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Fall Plan Resource Tool Project Management Common Actions and Interceptors 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012955
+                </link>
+                <description>
+                    Registration starts: 2010-08-16 13:01:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012955
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Fall Plan Resource Tool - Project Management Accounts Management 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013941
+                </link>
+                <description>
+                    Registration starts: 2010-08-16 14:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013941
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Business Object Generator 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013496
+                </link>
+                <description>
+                    Registration starts: 2010-08-16 21:07:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013496
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - shannon 0804 new ver des-dev 2.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013753
+                </link>
+                <description>
+                    Registration starts: 2010-08-16 22:30:17.850
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013753
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - File Display and error correction utility - Message Parsers 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013733
+                </link>
+                <description>
+                    Registration starts: 2010-08-16 23:45:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013733
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Studio Idea Generation  - AMD ATI Stream Challenge Idea Generation Contest
+                </title>
+                <link>
+                    http://studio.topcoder.com/?module=ViewContestDetails&amp;ct=1001777
+                </link>
+                <description>
+                    Registration starts: 2010-08-17 14:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-studio-1001777
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - FileNet Compound Document Copy 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012392
+                </link>
+                <description>
+                    Registration starts: 2010-08-18 07:45:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012392
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - TLEADSE E2E LEADS 2.0 Module Architecture for Website EJB Service Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013915
+                </link>
+                <description>
+                    Registration starts: 2010-08-18 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013915
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - Deleted ID Finder Java Batch Job 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013949
+                </link>
+                <description>
+                    Registration starts: 2010-08-18 10:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013949
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - Module Architecture to Nom/NAFTA E2E competence 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013910
+                </link>
+                <description>
+                    Registration starts: 2010-08-18 14:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013910
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    UI Prototype Competition - EDU CRM School User Prototype 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013816
+                </link>
+                <description>
+                    Registration starts: 2010-08-19 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013816
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - File Display and error correction utility - Message Utility Services 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013735
+                </link>
+                <description>
+                    Registration starts: 2010-08-19 03:10:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013735
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Studio Web Design - Hestia B2B GUI PSD Kit
+                </title>
+                <link>
+                    http://studio.topcoder.com/?module=ViewContestDetails&amp;ct=1001802
+                </link>
+                <description>
+                    Registration starts: 2010-08-19 13:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-studio-1001802
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - File Display and error correction utility  Message Displayer 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013737
+                </link>
+                <description>
+                    Registration starts: 2010-08-20 02:37:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013737
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - Automated code modifier for JAWS version 11 accessibility complaince 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013672
+                </link>
+                <description>
+                    Registration starts: 2010-08-20 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013672
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    UI Prototype Competition - TopCoder Direct Copilot Selection Contest Prototype 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013532
+                </link>
+                <description>
+                    Registration starts: 2010-08-21 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013532
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Search Transformation Tool 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30010011
+                </link>
+                <description>
+                    Registration starts: 2010-08-22 17:11:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30010011
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - DB Cleanup and Maintenance Tool 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30011128
+                </link>
+                <description>
+                    Registration starts: 2010-08-23 08:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30011128
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - Translation Management Tool v2 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013481
+                </link>
+                <description>
+                    Registration starts: 2010-08-23 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013481
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Shift Change Report Component 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013805
+                </link>
+                <description>
+                    Registration starts: 2010-08-24 15:04:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013805
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - Hestia B2B Placeholder 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013591
+                </link>
+                <description>
+                    Registration starts: 2010-08-25 12:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013591
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Studio Wireframes - shannon 0419 wireframe 1
+                </title>
+                <link>
+                    http://studio.topcoder.com/?module=ViewContestDetails&amp;ct=1001579
+                </link>
+                <description>
+                    Registration starts: 2010-08-28 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-studio-1001579
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - shannon 0813 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013940
+                </link>
+                <description>
+                    Registration starts: 2010-08-28 23:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013940
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - FileNet Compound Document Copy 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012393
+                </link>
+                <description>
+                    Registration starts: 2010-08-29 07:45:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012393
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Deleted ID Finder Java Batch Job 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013950
+                </link>
+                <description>
+                    Registration starts: 2010-08-29 10:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013950
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - TLEADSE E2E LEADS 2.0 Module Architecture for Website Front End Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013916
+                </link>
+                <description>
+                    Registration starts: 2010-08-30 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013916
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - TLEADSE E2E LEADS 2.0 Component Production for Website EJB Service Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013917
+                </link>
+                <description>
+                    Registration starts: 2010-08-30 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013917
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - TLEADSE E2E LEADS 2.0 Architecture Module for Data Migration Tool Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013914
+                </link>
+                <description>
+                    Registration starts: 2010-08-31 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013914
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Generate PSP Flow diagram 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013337
+                </link>
+                <description>
+                    Registration starts: 2010-08-31 17:01:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013337
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Rewrite ADP Periodic 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012339
+                </link>
+                <description>
+                    Registration starts: 2010-09-01 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012339
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - Java Custom Workflow Engine 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012405
+                </link>
+                <description>
+                    Registration starts: 2010-09-01 06:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012405
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Translation Management Tool v2 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013482
+                </link>
+                <description>
+                    Registration starts: 2010-09-03 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013482
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Specification - IGF UCC -- Requirements Specification 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30011935
+                </link>
+                <description>
+                    Registration starts: 2010-09-06 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30011935
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Automated code modifier for JAWS version 11 accessibility complaince 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013673
+                </link>
+                <description>
+                    Registration starts: 2010-09-06 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013673
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - BH WWPRT Report Generation Architecture 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30010492
+                </link>
+                <description>
+                    Registration starts: 2010-09-08 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30010492
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Development Component Project - Java Custom Education Web Service 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013866
+                </link>
+                <description>
+                    Registration starts: 2010-09-08 08:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013866
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - TLEADSE E2E LEADS 2.0 Component Production for Website EJB Service Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013918
+                </link>
+                <description>
+                    Registration starts: 2010-09-10 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013918
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - TLEADSE E2E LEADS 2.0 Component Production for Website Front End Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013919
+                </link>
+                <description>
+                    Registration starts: 2010-09-13 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013919
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - TLEADSE E2E LEADS 2.0 Component Production for Website Front End Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013921
+                </link>
+                <description>
+                    Registration starts: 2010-09-13 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013921
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Translation Management Tool v2 - Develop 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013483
+                </link>
+                <description>
+                    Registration starts: 2010-09-13 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013483
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Assembly Competition - TLEADSE E2E LEADS 2.0 Module Assembly for Website EJB Service Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013923
+                </link>
+                <description>
+                    Registration starts: 2010-09-20 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013923
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - TLEADSE E2E LEADS 2.0 Component Production for Website Front End Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013920
+                </link>
+                <description>
+                    Registration starts: 2010-09-24 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013920
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - TLEADSE E2E LEADS 2.0 Component Production for Website Front End Module 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013922
+                </link>
+                <description>
+                    Registration starts: 2010-09-24 09:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013922
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Architecture - shannon 0812 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013928
+                </link>
+                <description>
+                    Registration starts: 2010-09-25 23:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013928
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - BH WWPRT Report Generation Design 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30010493
+                </link>
+                <description>
+                    Registration starts: 2010-09-27 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30010493
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - SSIC DB2 Data Growth Query and Graph 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30010014
+                </link>
+                <description>
+                    Registration starts: 2010-09-28 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30010014
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - Create database connection pool in one-connection-per-thread schema 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30009615
+                </link>
+                <description>
+                    Registration starts: 2010-09-30 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30009615
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - shannon 0804 new ver des-dev 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013750
+                </link>
+                <description>
+                    Registration starts: 2010-09-30 23:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013750
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Java Custom Workflow Engine 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012406
+                </link>
+                <description>
+                    Registration starts: 2010-10-07 06:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012406
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - SSIC DB2 Data Growth Query and Graph 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30010015
+                </link>
+                <description>
+                    Registration starts: 2010-10-09 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30010015
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - shannon 0804 new ver des-dev 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013751
+                </link>
+                <description>
+                    Registration starts: 2010-10-11 23:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013751
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Create database connection pool in one-connection-per-thread schema 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30009616
+                </link>
+                <description>
+                    Registration starts: 2010-10-22 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30009616
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - Search Transformation Tool 4Q2010 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013475
+                </link>
+                <description>
+                    Registration starts: 2010-11-15 07:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013475
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Search Transformation Tool 4Q2010 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013476
+                </link>
+                <description>
+                    Registration starts: 2010-11-26 07:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013476
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Search Transformation Tool 4Q2010 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013479
+                </link>
+                <description>
+                    Registration starts: 2010-11-29 07:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013479
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - Search Transformation Tool 4Q2010 - Design - v2 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013484
+                </link>
+                <description>
+                    Registration starts: 2010-12-06 07:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013484
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Search Transformation Tool 4Q2010 - Design - v2 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013485
+                </link>
+                <description>
+                    Registration starts: 2010-12-17 07:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013485
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - DELETE ME 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013174
+                </link>
+                <description>
+                    Registration starts: 2011-01-01 03:45:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013174
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Test Suites - Admin Forum for Univision Foros Bug Hunt 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012012
+                </link>
+                <description>
+                    Registration starts: 2011-03-01 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012012
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - GLUI MQ Component Part 2 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30011150
+                </link>
+                <description>
+                    Registration starts: 2011-05-20 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30011150
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Studio Logo Design - TC Partner Setup Logo
+                </title>
+                <link>
+                    http://studio.topcoder.com/?module=ViewContestDetails&amp;ct=1001695
+                </link>
+                <description>
+                    Registration starts: 2011-06-13 23:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-studio-1001695
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Design - Delete Me 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012475
+                </link>
+                <description>
+                    Registration starts: 2011-07-01 15:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012475
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Delete Me 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012476
+                </link>
+                <description>
+                    Registration starts: 2011-07-12 15:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012476
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    RIA Build Competition - DELETE - Liquid Portal Release 2 Event Compete 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012930
+                </link>
+                <description>
+                    Registration starts: 2011-07-20 14:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012930
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Assembly Competition - Delete Me 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012403
+                </link>
+                <description>
+                    Registration starts: 2011-07-26 06:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012403
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Test Scenarios - Delete Me 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012404
+                </link>
+                <description>
+                    Registration starts: 2011-07-26 06:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012404
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    UI Prototype Competition - Delete Me 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013373
+                </link>
+                <description>
+                    Registration starts: 2011-08-03 23:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013373
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Delete Me 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012084
+                </link>
+                <description>
+                    Registration starts: 2011-08-04 20:30:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012084
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Studio Print/Presentation - 2010 TopCoder Open Program Contest 3
+                </title>
+                <link>
+                    http://studio.topcoder.com/?module=ViewContestDetails&amp;ct=1001812
+                </link>
+                <description>
+                    Registration starts: 2011-08-13 10:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-studio-1001812
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Delete Me 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013815
+                </link>
+                <description>
+                    Registration starts: 2011-08-16 08:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013815
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Specification - Test Contest - Delete It! 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013855
+                </link>
+                <description>
+                    Registration starts: 2011-08-22 08:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013855
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Specification - Test Contest - Delete It! 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30013856
+                </link>
+                <description>
+                    Registration starts: 2011-08-22 08:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30013856
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Component Development - Delete Me 1.0
+                </title>
+                <link>
+                    http://www.topcoder.com/tc?module=ProjectDetail&amp;pj=30012447
+                </link>
+                <description>
+                    Registration starts: 2012-01-12 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-project-30012447
+                </guid>
+			</item>
+        
+            <item>
+                <title>
+                    Studio Wireframes - Test Wireframe Type
+                </title>
+                <link>
+                    http://studio.topcoder.com/?module=ViewContestDetails&amp;ct=1001581
+                </link>
+                <description>
+                    Registration starts: 2014-04-25 00:00:00.000
+                </description>
+                <guid isPermaLink="false">
+                    www.topcoder.com-studio-1001581
+                </guid>
+			</item>
+        
+
+    </channel>
+</rss>
