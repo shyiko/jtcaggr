@@ -21,10 +21,20 @@ public abstract class AbstractFilter<T extends Contest> implements Filter<T> {
     }
 
     @Override
-    public List<T> filter(List<T> contestsToFilter) {
+    public List<T> filterValid(List<T> contestsToFilter) {
         List<T> result = new LinkedList<T>();
         for (T contest : contestsToFilter) {
             if (isValid(contest))
+                result.add(contest);
+        }
+        return result;
+    }
+
+    @Override
+    public List<T> filterInvalid(List<T> contestsToFilter) {
+        List<T> result = new LinkedList<T>();
+        for (T contest : contestsToFilter) {
+            if (!isValid(contest))
                 result.add(contest);
         }
         return result;

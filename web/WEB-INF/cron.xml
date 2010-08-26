@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cronentries>
-  <cron>
-    <url>/cron/update</url>
-    <description>Update TopCoder cache</description>
-    <schedule>every 30 minutes</schedule>
-  </cron>
     <cron>
-      <url>/cron/mail</url>
-      <description>Send email with recent TopCoder updates to subscribers, if any</description>
-      <schedule>every 25 minutes</schedule>
+        <url>/cron/update</url>
+        <description>Update TopCoder cache</description>
+        <schedule>every 30 minutes</schedule>
+    </cron>
+    <cron>
+        <url>/cron/mail</url>
+        <description>Send email with recent TopCoder updates to subscribers, if any</description>
+        <schedule>every 25 minutes</schedule>
+    </cron>
+    <cron>
+        <url>/cron/stale</url>
+        <description>Remove stale contests from database, if any</description>
+        <schedule>every 1 hour</schedule>
     </cron>
 </cronentries>

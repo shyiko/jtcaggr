@@ -38,6 +38,7 @@ public class UpdateUpcomingContestServlet extends ContestUpdateServlet {
     private Filter<UpcomingContest> filter;
     private MailQueue mailQueue;
 
+    @SuppressWarnings("unchecked")
     @Inject
     public UpdateUpcomingContestServlet(ContestPageParser parser, Filter filter, ContestDAO contestDAO, MailQueue mailQueue) {
         this.parser = parser;

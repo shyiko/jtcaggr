@@ -51,7 +51,10 @@ public class GuiceServletConfig extends GuiceServletContextListener {
                 bind(SubscriberDAO.class).in(Singleton.class);
                 bind(MailQueue.class).in(Singleton.class);
 
-                bind(Filter.class).toProvider(FilterProvider.class).in(Singleton.class);
+                bind(Filter.class).annotatedWith(Names.named("PersistedFilter")).
+                        toProvider(FilterForPersistedContestsProvider.class).in(Singleton.class);
+
+                bind(Filter.class).toProvider(FilterForNewContestsProvider.class).in(Singleton.class);
 
                 bind(Queue.class).annotatedWith(Names.named("UpdateQueue")).toInstance(QueueFactory.getQueue("update-queue"));
                 bind(String.class).annotatedWith(Names.named("UpdateUpcomingContestTaskURL")).toInstance(TASKS_UPDATE_UPCOMING_CONTEST);
@@ -68,6 +71,8 @@ public class GuiceServletConfig extends GuiceServletContextListener {
                 serve(TASKS_UPDATE_UPCOMING_CONTESTS).with(UpdateUpcomingContestsServlet.class);
                 // mail
                 serve("/cron/mail").with(MailServlet.class);
+                // stale contests remover
+                serve("/cron/stale").with(StaleContestsRemoveServlet.class);
 
                 filter("/contests/*").through(ContestsJSONFilter.class);
             }

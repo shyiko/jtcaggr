@@ -9,14 +9,14 @@ import com.appspot.jtcaggr.jdo.dao.ContestDAO;
  * @author shyiko
  * @since Aug 19, 2010
  */
-public class DuplicateFilter<T extends Contest> extends AbstractFilter<T> {
+public class StaleFilter<T extends Contest> extends AbstractFilter<T> {
 
     private ContestDAO contestDAO;
 
-    public DuplicateFilter() {
+    public StaleFilter() {
     }
 
-    public DuplicateFilter(Filter<T> nextFilter) {
+    public StaleFilter(Filter<T> nextFilter) {
         super(nextFilter);
     }
 
@@ -27,8 +27,10 @@ public class DuplicateFilter<T extends Contest> extends AbstractFilter<T> {
     @Override
     protected boolean validate(T contest) {
         boolean result = true;
-        String id = contest.getId();
-        result = result & contestDAO.find(contest.getClass(), id) == null; 
+        if (contest instanceof UpcomingContest) {
+            String id = contest.getId();
+            result = result & contestDAO.find(ActiveContest.class, id) == null;
+        }
         return result;
     }
 }

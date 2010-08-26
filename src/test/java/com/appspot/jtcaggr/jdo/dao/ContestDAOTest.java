@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import javax.jdo.PersistenceManager;
 import javax.jdo.Transaction;
+import java.util.Collection;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -50,6 +51,26 @@ public class ContestDAOTest extends JDOTest {
         try {
             List actual = (List) pm.newQuery(ActiveContest.class).execute();
             Assert.assertEquals(actual.size(), 2);
+        } finally {
+            pm.close();
+        }
+    }
+
+    @Test
+    public void testDeleteAll() throws Exception {
+        ContestDAO contestDAO = new ContestDAO();
+        contestDAO.setPersistenceManagerFactory(getPersistenceManagerFactory());
+        List<ActiveContest> contests = new LinkedList<ActiveContest>();
+        contests.add(new ActiveContest(Competition.DEVELOPMENT, Catalog.JAVA, "name", "link",
+                new Date(0), new Date(1), 2, 3, 4, 5, 6, 7));
+        contests.add(new ActiveContest(Competition.DEVELOPMENT, Catalog.JAVA, "name2", "link2",
+                new Date(0), new Date(1), 2, 3, 4, 5, 6, 7));
+        Collection<ActiveContest> persistedContests = contestDAO.persistAll(contests);
+        contestDAO.deleteAll(persistedContests);
+        PersistenceManager pm = getNewPersistenceManager();
+        try {
+            List actual = (List) pm.newQuery(ActiveContest.class).execute();
+            Assert.assertEquals(actual.size(), 0);
         } finally {
             pm.close();
         }

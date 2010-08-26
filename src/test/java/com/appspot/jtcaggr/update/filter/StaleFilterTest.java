@@ -10,44 +10,28 @@ import java.util.Date;
 
 /**
  * @author shyiko
- * @since Aug 23, 2010
+ * @since Aug 26, 2010
  */
-public class DuplicateFilterTest extends JDOTest {
+public class StaleFilterTest extends JDOTest {
 
     private ContestDAO contestDAO;
-    private DuplicateFilter<Contest> filter;
+    private StaleFilter<Contest> filter;
 
     @BeforeClass
     public void setUp() {
         contestDAO = new ContestDAO();
         contestDAO.setPersistenceManagerFactory(getPersistenceManagerFactory());
 
-        filter = new DuplicateFilter<Contest>();
+        filter = new StaleFilter<Contest>();
         filter.setContestDAO(contestDAO);
     }
 
     @Test
-    public void testIfPersistedActiveContestIsNotValid() {
-        Contest contest = contestDAO.persist(createActiveContest("a"));
+    public void testIfNotPersistedUpcomingContestIsNotValidWhenSameActiveContestExists() {
+        String link = "a";
+        contestDAO.persist(createActiveContest(link));
+        Contest contest = createUpcomingContest(link);
         Assert.assertFalse(filter.isValid(contest));
-    }
-
-    @Test
-    public void testIfPersistedUpcomingContestIsNotValid() {
-        Contest contest = contestDAO.persist(createUpcomingContest("a"));
-        Assert.assertFalse(filter.isValid(contest));
-    }
-
-    @Test
-    public void testIfNotPersistedActiveContestIsValid() {
-        Contest contest = createActiveContest("a");
-        Assert.assertTrue(filter.isValid(contest));
-    }
-
-    @Test
-    public void testIfNotPersistedUpcomingContestIsValid() {
-        Contest contest = createUpcomingContest("a");
-        Assert.assertTrue(filter.isValid(contest));
     }
 
     private ActiveContest createActiveContest(String link) {

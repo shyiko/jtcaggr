@@ -1,7 +1,7 @@
 package com.appspot.jtcaggr.update;
 
 import com.appspot.jtcaggr.URL;
-import com.appspot.jtcaggr.guice.FilterProvider;
+import com.appspot.jtcaggr.guice.FilterForNewContestsProvider;
 import com.appspot.jtcaggr.jdo.ActiveContest;
 import com.appspot.jtcaggr.jdo.JDOTest;
 import com.appspot.jtcaggr.jdo.dao.ContestDAO;
@@ -44,7 +44,7 @@ public class UpdateActiveContestsServletTest extends JDOTest {
         ContestDAO contestDAO = new ContestDAO();
         contestDAO.setPersistenceManagerFactory(getPersistenceManagerFactory());
 
-        FilterProvider filterProvider = new FilterProvider(contestDAO);
+        FilterForNewContestsProvider filterProvider = new FilterForNewContestsProvider(contestDAO);
 
         MailQueue mailQueue = new MailQueue();
 

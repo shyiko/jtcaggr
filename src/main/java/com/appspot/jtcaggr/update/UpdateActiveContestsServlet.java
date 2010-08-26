@@ -33,6 +33,7 @@ public class UpdateActiveContestsServlet extends ContestUpdateServlet {
     private ContestDAO contestDAO;
     private MailQueue mailQueue;
 
+    @SuppressWarnings("unchecked")
     @Inject
     public UpdateActiveContestsServlet(ActiveContestsParser parser, Filter filter, ContestDAO contestDAO, MailQueue mailQueue) {
         this.parser = parser;
@@ -55,7 +56,7 @@ public class UpdateActiveContestsServlet extends ContestUpdateServlet {
             return;
         }
 
-        List<ActiveContest> newContests = filter.filter(contests);
+        List<ActiveContest> newContests = filter.filterValid(contests);
         int newContestsNumber = newContests.size();
         if (newContestsNumber > 0) {
             logger.info("Found " + newContestsNumber + " new contest(s) at " + link);

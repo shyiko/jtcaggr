@@ -62,11 +62,11 @@ public class ContestDAO extends GenericDAO<Contest> {
         }
     }
 
-    public void delete(Class<? extends Contest> domainClass, String id) {
+    public void delete(Contest contest) {
         PersistenceManager pm = getNewPersistenceManager();
         Transaction txn = pm.currentTransaction();
         try {
-            Contest objectToDelete = findContest(pm, domainClass, id);
+            Contest objectToDelete = findContest(pm, contest.getClass(), contest.getId());
             if (objectToDelete == null)
                 return;
             txn.begin();
@@ -79,19 +79,18 @@ public class ContestDAO extends GenericDAO<Contest> {
         }
     }
 
-    public <T extends Contest> List<T> deleteObsolete(Class<T> domainClass) {
+    public void deleteAll(Collection<? extends Contest> contests) {
         PersistenceManager pm = getNewPersistenceManager();
         Transaction txn = pm.currentTransaction();
         try {
-            txn.begin();
-            Query query = pm.newQuery(domainClass);
-            query.setFilter("submitBy < dateToFilter");
-            query.declareParameters("Date dateToFilter");
-            List<T> contestsToDelete = (List<T>) query.execute(new Date());
-            List<T> result = (List<T>) pm.detachCopyAll(contestsToDelete);
-            pm.deletePersistentAll(contestsToDelete);
-            txn.commit();
-            return result;
+            for (Contest contest : contests) {
+                Contest objectToDelete = findContest(pm, contest.getClass(), contest.getId());
+                if (objectToDelete == null)
+                    return;
+                txn.begin();
+                pm.deletePersistent(objectToDelete);
+                txn.commit();
+            }
         } finally {
             if (txn.isActive())
                 txn.rollback();

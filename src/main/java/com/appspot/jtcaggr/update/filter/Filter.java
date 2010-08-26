@@ -10,7 +10,8 @@ import java.util.List;
  */
 public interface Filter<T extends Contest> {
 
-    List<T> filter(List<T> contestsToFilter);
+    List<T> filterValid(List<T> contestsToFilter);
+    List<T> filterInvalid(List<T> contestsToFilter);
 
     /**
      * Check if contest is valid within the bounds of filter.

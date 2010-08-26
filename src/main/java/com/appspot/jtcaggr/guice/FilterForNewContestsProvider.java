@@ -1,10 +1,7 @@
 package com.appspot.jtcaggr.guice;
 
 import com.appspot.jtcaggr.jdo.dao.ContestDAO;
-import com.appspot.jtcaggr.update.filter.DuplicateFilter;
-import com.appspot.jtcaggr.update.filter.FakeFilter;
-import com.appspot.jtcaggr.update.filter.Filter;
-import com.appspot.jtcaggr.update.filter.ObsoleteFilter;
+import com.appspot.jtcaggr.update.filter.*;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 
@@ -12,12 +9,12 @@ import com.google.inject.Provider;
  * @author shyiko
  * @since Aug 21, 2010
  */
-public class FilterProvider implements Provider<Filter> {
+public class FilterForNewContestsProvider implements Provider<Filter> {
 
     private ContestDAO contestDAO;
 
     @Inject
-    public FilterProvider(ContestDAO contestDAO) {
+    public FilterForNewContestsProvider(ContestDAO contestDAO) {
         this.contestDAO = contestDAO;
     }
 
@@ -26,6 +23,8 @@ public class FilterProvider implements Provider<Filter> {
     public Filter get() {
         DuplicateFilter duplicateFilter = new DuplicateFilter();
         duplicateFilter.setContestDAO(contestDAO);
-        return new FakeFilter(new ObsoleteFilter(duplicateFilter));
+        StaleFilter staleFilter = new StaleFilter(duplicateFilter);
+        staleFilter.setContestDAO(contestDAO);
+        return new FakeFilter(new ObsoleteFilter(staleFilter));
     }
 }
