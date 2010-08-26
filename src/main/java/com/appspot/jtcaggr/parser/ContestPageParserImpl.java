@@ -9,7 +9,6 @@ import com.appspot.jtcaggr.jdo.UpcomingContest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.ParseException;
@@ -17,10 +16,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
+ * Thread-safety: Thread safe provided that input parameters are thread safe.
+ *
  * @author shyiko
  * @since Aug 14, 2010
  */
-public class ContestPageParserImpl implements SingleContestParser {
+public class ContestPageParserImpl implements ContestPageParser {
 
     private static final Logger logger = LoggerFactory.getLogger(ContestPageParserImpl.class);
 
@@ -39,7 +40,7 @@ public class ContestPageParserImpl implements SingleContestParser {
                 Date submitBy = getSubmitBy(crawler);
                 // find payment
                 Integer payment = getPayment(crawler);
-                
+
                 return new UpcomingContest(null, catalog, null, null, registerBy, submitBy, payment);
             } finally {
                 inputStream.close();
@@ -63,8 +64,7 @@ public class ContestPageParserImpl implements SingleContestParser {
                 || !(technologies.toLowerCase().contains("java")
                 || technologies.toLowerCase().contains("j2ee")))
             throw new ParsingException("Contest doesn't use Java");
-        Catalog catalog = Catalog.JAVA;
-        return catalog;
+        return Catalog.JAVA;
     }
 
     private Date getRegisterBy(Crawler crawler) throws CrawlerException {

@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import javax.jdo.PersistenceManager;
 import javax.jdo.Transaction;
-import java.util.Date;
 import java.util.List;
 
 /**

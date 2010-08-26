@@ -15,7 +15,7 @@ public class XMLCrawlerTest {
     @Test
     public void testFindNext() throws Exception {
         XMLCrawler crawler;
-        FileInputStream stream = new FileInputStream("src/test/resources/tc?module=BasicRSS&t=new_report&c=rss_Pipeline&dsid=28.xml");
+        FileInputStream stream = new FileInputStream("src/test/resources/upcoming-contests-rss.xml");
         BufferedInputStream inputStream = new BufferedInputStream(stream);
         try {
             crawler = new XMLCrawler(inputStream);

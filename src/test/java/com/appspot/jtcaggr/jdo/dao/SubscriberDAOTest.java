@@ -1,6 +1,5 @@
 package com.appspot.jtcaggr.jdo.dao;
 
-import com.appspot.jtcaggr.jdo.Contest;
 import com.appspot.jtcaggr.jdo.JDOTest;
 import com.appspot.jtcaggr.jdo.Subscriber;
 import org.testng.Assert;

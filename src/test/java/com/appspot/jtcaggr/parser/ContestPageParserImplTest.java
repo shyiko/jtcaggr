@@ -19,7 +19,7 @@ public class ContestPageParserImplTest {
     @Test
     public void testParse() throws Exception {
         URL url = Mockito.mock(URL.class);
-        FileInputStream inputStream = new FileInputStream("src/test/resources/tc?module=ProjectDetail&pj=30013966.html");
+        FileInputStream inputStream = new FileInputStream("src/test/resources/project-details-page.html");
         Mockito.when(url.openStream()).thenReturn(inputStream);
         try {
             ContestPageParserImpl contestPageParser = new ContestPageParserImpl();

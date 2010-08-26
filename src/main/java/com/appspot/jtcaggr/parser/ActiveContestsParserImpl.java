@@ -7,7 +7,6 @@ import com.appspot.jtcaggr.crawler.Tag;
 import com.appspot.jtcaggr.jdo.ActiveContest;
 import com.appspot.jtcaggr.jdo.Catalog;
 import com.appspot.jtcaggr.jdo.Competition;
-import com.appspot.jtcaggr.jdo.Contest;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
@@ -20,10 +19,12 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 /**
+ * Thread-safety: Thread safe provided that input parameters are thread safe.
+ *
  * @author shyiko
  * @since Aug 5, 2010
  */
-public class ActiveContestsParserImpl implements MultipleContestsParser {
+public class ActiveContestsParserImpl implements ActiveContestsParser {
 
     private static final Logger logger = Logger.getLogger(ActiveContestsParserImpl.class);
     private static Pattern tagPattern = Pattern.compile("(<).*?(>)", Pattern.DOTALL);
@@ -34,13 +35,13 @@ public class ActiveContestsParserImpl implements MultipleContestsParser {
                 }
             };
 
-    public List<Contest> parse(URL url) throws ParsingException {
+    public List<ActiveContest> parse(URL url) throws ParsingException {
         logger.debug("Starting to parse " + url);
         InputStream inputStream = null;
         try {
             inputStream = url.openStream();
             HTMLCrawler crawler = new HTMLCrawler(inputStream);
-            List<Contest> result = new LinkedList<Contest>();
+            List<ActiveContest> result = new LinkedList<ActiveContest>();
             crawler.findNext("table", "class", "stat");
             // skip first two tr tags
             crawler.findNext("tr");

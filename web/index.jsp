@@ -113,7 +113,7 @@
         </div>
 
         <div id="footer" class="corner" style="float:left; margin-left:250px;">
-            Source code is freely available under GPLv3 at <a href="http://code.google.com/p/jtcaggr">http://code.google.com/p/jtcaggr</a>.
+            Source code is freely available under GPLv3 at <a href="http://github.com/shyiko/jtcaggr">http://github.com/shyiko/jtcaggr</a>.
             <br>
             <span id="copyright">
                 Copyright &copy; 2010 <a href="http://ua.linkedin.com/in/shyiko">Stanley Shyiko</a>

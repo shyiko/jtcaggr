@@ -4,8 +4,6 @@ import com.appspot.jtcaggr.jdo.JDOTest;
 import com.appspot.jtcaggr.jdo.Subscriber;
 import com.appspot.jtcaggr.jdo.dao.SubscriberDAO;
 import org.mockito.Mockito;
-import org.mockito.invocation.InvocationOnMock;
-import org.mockito.stubbing.Answer;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

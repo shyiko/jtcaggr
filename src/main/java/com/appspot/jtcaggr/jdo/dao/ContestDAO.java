@@ -6,6 +6,7 @@ import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
 import javax.jdo.Transaction;
 import java.util.Collection;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -71,6 +72,47 @@ public class ContestDAO extends GenericDAO<Contest> {
             txn.begin();
             pm.deletePersistent(objectToDelete);
             txn.commit();
+        } finally {
+            if (txn.isActive())
+                txn.rollback();
+            pm.close();
+        }
+    }
+
+    public <T extends Contest> List<T> deleteObsolete(Class<T> domainClass) {
+        PersistenceManager pm = getNewPersistenceManager();
+        Transaction txn = pm.currentTransaction();
+        try {
+            txn.begin();
+            Query query = pm.newQuery(domainClass);
+            query.setFilter("submitBy < dateToFilter");
+            query.declareParameters("Date dateToFilter");
+            List<T> contestsToDelete = (List<T>) query.execute(new Date());
+            List<T> result = (List<T>) pm.detachCopyAll(contestsToDelete);
+            pm.deletePersistentAll(contestsToDelete);
+            txn.commit();
+            return result;
+        } finally {
+            if (txn.isActive())
+                txn.rollback();
+            pm.close();
+        }
+    }
+
+    public <T extends Contest> Collection<T> persistAll(Collection<T> objList) {
+        PersistenceManager pm = getNewPersistenceManager();
+        Transaction txn = pm.currentTransaction();
+        try {
+            /**
+             * Persistence of multiple objects of the same type in one transactions is not allowed in GAE/J,
+             * so makePersistentAll(...) is not allowed
+             */
+            for (T obj : objList) {
+                txn.begin();
+                pm.makePersistent(obj);
+                txn.commit();
+            }
+            return pm.detachCopyAll(objList);
         } finally {
             if (txn.isActive())
                 txn.rollback();

@@ -14,7 +14,7 @@ import java.util.List;
  * @since Aug 4, 2010
  */
 @Singleton
-public class DefaultContestsProviderImpl extends ContestsProvider {
+public class DefaultContestsProviderServletImpl extends ContestsProviderServlet {
 
     @Override
     public ContestsTO getContests(Class<? extends Contest> domainClass, Competition competition,

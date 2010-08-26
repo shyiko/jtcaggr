@@ -6,9 +6,11 @@
             <package name="com.appspot.jtcaggr.crawler"/>
             <package name="com.appspot.jtcaggr.jdo"/>
             <package name="com.appspot.jtcaggr.jdo.dao"/>
+            <package name="com.appspot.jtcaggr.mail"/>
             <package name="com.appspot.jtcaggr.parser"/>
             <package name="com.appspot.jtcaggr.subscribing"/>
             <package name="com.appspot.jtcaggr.update"/>
+            <package name="com.appspot.jtcaggr.update.filter"/>
         </packages>
     </test>
 </suite>

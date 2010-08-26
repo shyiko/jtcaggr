@@ -52,7 +52,7 @@
 
         <servlet>
             <servlet-name>update</servlet-name>
-            <servlet-class>com.appspot.jtcaggraggr.Updater</servlet-class>
+            <servlet-class>com.appspot.jtcaggraggr.UpdateServlet</servlet-class>
             <init-param>
                 <param-name>url</param-name>
                 <param-value>http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113</param-value>

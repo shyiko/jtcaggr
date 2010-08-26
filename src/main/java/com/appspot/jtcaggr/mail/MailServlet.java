@@ -1,4 +1,4 @@
-package com.appspot.jtcaggr;
+package com.appspot.jtcaggr.mail;
 
 import com.appspot.jtcaggr.jdo.ActiveContest;
 import com.appspot.jtcaggr.jdo.Contest;
@@ -7,6 +7,7 @@ import com.appspot.jtcaggr.jdo.UpcomingContest;
 import com.appspot.jtcaggr.jdo.dao.SubscriberDAO;
 import com.appspot.jtcaggr.subscribing.SubscribeUtils;
 import com.google.inject.Inject;
+import com.google.inject.Singleton;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,7 +18,11 @@ import javax.mail.Transport;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import java.io.UnsupportedEncodingException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
@@ -27,27 +32,46 @@ import java.util.Properties;
  * @author shyiko
  * @since Aug 10, 2010
  */
-public class MailService {
+@Singleton
+public class MailServlet extends HttpServlet {
 
-    private static final Logger logger = LoggerFactory.getLogger(MailService.class);
+    private static final Logger logger = LoggerFactory.getLogger(MailServlet.class);
 
+    private MailQueue mailQueue;
     private SubscriberDAO subscriberDAO;
     private SubscribeUtils subscribeUtils;
 
     @Inject
-    public MailService(SubscriberDAO subscriberDAO, SubscribeUtils subscribeUtils) {
+    public MailServlet(MailQueue mailQueue, SubscriberDAO subscriberDAO, SubscribeUtils subscribeUtils) {
+        this.mailQueue = mailQueue;
         this.subscriberDAO = subscriberDAO;
         this.subscribeUtils = subscribeUtils;
     }
 
-    public void informSubscribesAboutNewContests(List<Contest> newContests) {
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        informSubscribesAboutNewContests();
+    }
+
+    public void informSubscribesAboutNewContests() {
+        logger.info("Mail service started.");
+        List<Contest> newContests = mailQueue.getNewContests();
+        if (newContests.isEmpty()) {
+            logger.info("No new contests were found. Skipping...");
+            return;
+        }
+        logger.info(String.format("Found %d new contest(s).", newContests.size()));
+
         Collection<Subscriber> subscribers = subscriberDAO.findAll();
+        logger.info(String.format("Found %d subscriber(s).", subscribers.size()));
+
         Session session = Session.getDefaultInstance(new Properties(), null);
         String messageBody = generateMessageBody(newContests);
         InternetAddress from;
         try {
-            from = new InternetAddress("admin@jtcaggr.appspot.com", "Stanley Shyiko");
-        } catch (UnsupportedEncodingException e) {
+            from = new InternetAddress("stas.shyiko@gmail.com");
+        } catch (AddressException e) {
             logger.error(e.getMessage(), e);
             return;
         }

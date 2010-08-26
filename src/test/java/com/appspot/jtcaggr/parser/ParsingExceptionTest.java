@@ -1,6 +1,5 @@
 package com.appspot.jtcaggr.parser;
 
-import com.appspot.jtcaggr.crawler.CrawlerException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

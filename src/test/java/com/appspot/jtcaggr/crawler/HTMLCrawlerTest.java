@@ -4,7 +4,6 @@ import org.apache.commons.io.IOUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -14,6 +13,7 @@ import java.util.HashMap;
  * @since Aug 6, 2010
  */
 public class HTMLCrawlerTest {
+    private static final String ACTIVE_CONTESTS_HTML_FILE = "src/test/resources/active-contests-page.html";
 
     @Test
     public void testNestedTags() throws Exception {
@@ -54,7 +54,7 @@ public class HTMLCrawlerTest {
     @Test
     public void testFindNext() throws Exception {
         HTMLCrawler crawler;
-        FileInputStream inputStream = new FileInputStream("src/test/resources/tc?module=ViewActiveContests&ph=113.html");
+        FileInputStream inputStream = new FileInputStream(ACTIVE_CONTESTS_HTML_FILE);
         try {
             crawler = new HTMLCrawler(inputStream);
             Tag tableTag = crawler.findNext("table");
@@ -78,7 +78,7 @@ public class HTMLCrawlerTest {
     @Test
     public void testFindNextWithoutAnyAttributes() throws Exception {
         HTMLCrawler crawler;
-        FileInputStream inputStream = new FileInputStream("src/test/resources/tc?module=ViewActiveContests&ph=113.html");
+        FileInputStream inputStream = new FileInputStream(ACTIVE_CONTESTS_HTML_FILE);
         try {
             crawler = new HTMLCrawler(inputStream);
             crawler.findNext("table", new HashMap<String, String>() {{
@@ -94,7 +94,7 @@ public class HTMLCrawlerTest {
     @Test
     public void testFindNextWithAttributes() throws Exception {
         HTMLCrawler crawler;
-        FileInputStream inputStream = new FileInputStream("src/test/resources/tc?module=ViewActiveContests&ph=113.html");
+        FileInputStream inputStream = new FileInputStream(ACTIVE_CONTESTS_HTML_FILE);
         try {
             crawler = new HTMLCrawler(inputStream);
             HashMap<String, String> map = new HashMap<String, String>() {{
@@ -115,7 +115,7 @@ public class HTMLCrawlerTest {
     @Test
     public void testGetText() throws Exception {
         HTMLCrawler crawler;
-        FileInputStream inputStream = new FileInputStream("src/test/resources/tc?module=ViewActiveContests&ph=113.html");
+        FileInputStream inputStream = new FileInputStream(ACTIVE_CONTESTS_HTML_FILE);
         try {
             crawler = new HTMLCrawler(inputStream);
             crawler.findNext("tr", new HashMap<String, String>() {{

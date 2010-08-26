@@ -17,7 +17,7 @@ import java.io.IOException;
  * @author shyiko
  * @since Aug 7, 2010
  */
-public abstract class ContestsProvider extends HttpServlet {
+public abstract class ContestsProviderServlet extends HttpServlet {
 
     private ContestDAO contestDAO;
 

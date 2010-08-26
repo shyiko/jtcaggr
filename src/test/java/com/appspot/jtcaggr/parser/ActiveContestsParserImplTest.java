@@ -4,7 +4,6 @@ import com.appspot.jtcaggr.URL;
 import com.appspot.jtcaggr.jdo.ActiveContest;
 import com.appspot.jtcaggr.jdo.Catalog;
 import com.appspot.jtcaggr.jdo.Competition;
-import com.appspot.jtcaggr.jdo.Contest;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -22,11 +21,11 @@ public class ActiveContestsParserImplTest {
     @Test
     public void testParse() throws Exception {
         URL url = Mockito.mock(URL.class);
-        FileInputStream inputStream = new FileInputStream("src/test/resources/tc?module=ViewActiveContests&ph=113.html");
+        FileInputStream inputStream = new FileInputStream("src/test/resources/active-contests-page.html");
         try {
             Mockito.when(url.openStream()).thenReturn(inputStream);
-            MultipleContestsParser parser = new ActiveContestsParserImpl();
-            List<Contest> contests = parser.parse(url);
+            ActiveContestsParser parser = new ActiveContestsParserImpl();
+            List<ActiveContest> contests = parser.parse(url);
             ActiveContest contest = (ActiveContest) contests.get(0);
             Assert.assertEquals(contest.getCompetition(), Competition.DEVELOPMENT);
             Assert.assertEquals(contest.getCatalog(), Catalog.JAVA);
@@ -52,11 +51,11 @@ public class ActiveContestsParserImplTest {
     @Test
     public void testParsePageWithMultipleContests() throws Exception {
         URL url = Mockito.mock(URL.class);
-        FileInputStream inputStream = new FileInputStream("src/test/resources/tc?module=ViewActiveContests&ph=113-2.html");
+        FileInputStream inputStream = new FileInputStream("src/test/resources/active-contests-page-ex.html");
         try {
             Mockito.when(url.openStream()).thenReturn(inputStream);
-            MultipleContestsParser parser = new ActiveContestsParserImpl();
-            List<Contest> contests = parser.parse(url);
+            ActiveContestsParser parser = new ActiveContestsParserImpl();
+            List<ActiveContest> contests = parser.parse(url);
             Assert.assertEquals(contests.size(), 9);
         } finally {
             inputStream.close();

@@ -1,4 +1,4 @@
-package com.appspot.jtcaggr;
+package com.appspot.jtcaggr.mail;
 
 import com.appspot.jtcaggr.jdo.*;
 import com.appspot.jtcaggr.jdo.dao.SubscriberDAO;
@@ -29,13 +29,15 @@ public class MailServiceTest extends JDOTest {
         Mockito.when(subscriberDAO.findAll()).thenReturn(subscribers);
         SubscribeUtils subscribeUtils = new SubscribeUtils(subscriberDAO);
         final MutableBoolean sendInvoked = new MutableBoolean(false);
-        MailService mailService = new MailService(subscriberDAO, subscribeUtils) {
+        MailQueue mailQueue = new MailQueue();
+        mailQueue.markAsNew(new ActiveContest(Competition.DEVELOPMENT, Catalog.JAVA, "name", "link", new Date(0),
+                    new Date(1), 2, 3, 4, 5, 6, 7));
+        MailServlet mailServlet = new MailServlet(mailQueue, subscriberDAO, subscribeUtils) {
             @Override
             protected void sendMessage(Session session, InternetAddress from, InternetAddress to, String subject, String text) throws MessagingException {
                 sendInvoked.setValue(true);
                 Assert.assertEquals(subject, "TopCoder updates");
-                Assert.assertEquals(from.getAddress(), "admin@jtcaggr.appspot.com");
-                Assert.assertEquals(from.getPersonal(), "Stanley Shyiko");
+                Assert.assertEquals(from.getAddress(), "stas.shyiko@gmail.com");
                 Assert.assertEquals(to.getAddress(), "body@gmail.com");
                 Assert.assertEquals(text, "New contests were added to the TopCoder database.<br>" +
                                         "New active contests:<br>" +
@@ -47,11 +49,7 @@ public class MailServiceTest extends JDOTest {
                                         "<a href=\"http://jtcaggr.appspot.com/unsubscribe?hash=fda922494587dcf722789f530fdf29\">here</a>.");
             }
         };
-        List<Contest> contests = new ArrayList<Contest>() {{
-            add(new ActiveContest(Competition.DEVELOPMENT, Catalog.JAVA, "name", "link", new Date(0),
-                    new Date(1), 2, 3, 4, 5, 6, 7));
-        }};
-        mailService.informSubscribesAboutNewContests(contests);
+        mailServlet.informSubscribesAboutNewContests();
         Assert.assertTrue((Boolean) sendInvoked.getValue());
     }
 }

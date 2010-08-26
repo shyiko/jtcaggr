@@ -5,4 +5,9 @@
     <description>Update TopCoder cache</description>
     <schedule>every 30 minutes</schedule>
   </cron>
+    <cron>
+      <url>/cron/mail</url>
+      <description>Send email with recent TopCoder updates to subscribers, if any</description>
+      <schedule>every 25 minutes</schedule>
+    </cron>
 </cronentries>

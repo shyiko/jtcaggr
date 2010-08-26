@@ -2,6 +2,8 @@ package com.appspot.jtcaggr;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
+
 
 /**
  * Wrapper for java.net.URL class.
@@ -13,6 +15,8 @@ import java.io.InputStream;
  */
 public class URL {
 
+    private static final int CONNECTION_TIMEOUT = 10000;
+
     private String url;
 
     public URL(String url) {
@@ -20,7 +24,9 @@ public class URL {
     }
 
     public InputStream openStream() throws IOException {
-        return new java.net.URL(url).openStream();
+        HttpURLConnection connection = (HttpURLConnection) new java.net.URL(url).openConnection();
+        connection.setConnectTimeout(CONNECTION_TIMEOUT);
+        return connection.getInputStream();
     }
 
     @Override
