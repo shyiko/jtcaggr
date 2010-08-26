@@ -48,6 +48,7 @@ public class StaleContestsRemoveServlet extends HttpServlet {
         List<Contest> staleContests = filter.filterInvalid(contests);
         if (staleContests.isEmpty()) {
             logger.info("No stale contests were found. Skipping...");
+            return;
         }
         logger.info(String.format("Found %d stale contests", staleContests.size()));
         contestDAO.deleteAll(staleContests);
