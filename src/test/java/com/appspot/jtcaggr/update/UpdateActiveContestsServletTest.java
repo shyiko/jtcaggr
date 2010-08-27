@@ -52,6 +52,7 @@ public class UpdateActiveContestsServletTest extends JDOTest {
                 contestDAO, mailQueue);
         servlet.service(mock(HttpServletRequest.class), null);
 
-        Assert.assertEquals(mailQueue.getNewContests().size(), 3);        
+        Assert.assertEquals(mailQueue.getNewContests().size(), 2);
+        Assert.assertEquals(mailQueue.getNewContests().size(), 0);        
     }
 }

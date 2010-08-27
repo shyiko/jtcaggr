@@ -44,10 +44,12 @@ public class ObsoleteFilterTest {
 
     @Test
     public void testIfTodayIsValid() {
-        Date submitByDate = new Date(1282770000000l);
-        Date todayDate = new Date(1282812302717l);
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.MILLISECOND, 1);
+        calendar.set(Calendar.SECOND, 2);
+        Date submitByDate = calendar.getTime();
         Contest contest = new UpcomingContest(Competition.DEVELOPMENT, Catalog.JAVA, "name", "link",
-                todayDate, todayDate, 0); 
+                submitByDate, submitByDate, 0);
         Assert.assertTrue(filter.isValid(contest));
     }
 
