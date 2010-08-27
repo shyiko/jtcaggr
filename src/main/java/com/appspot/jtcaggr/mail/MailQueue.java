@@ -2,10 +2,7 @@ package com.appspot.jtcaggr.mail;
 
 import com.appspot.jtcaggr.jdo.Contest;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
@@ -27,6 +24,10 @@ public class MailQueue {
     }
 
     public List<Contest> getNewContests() {
-        return Arrays.asList(updatedContests.toArray(new Contest[] {}));
+        List<Contest> contests = new LinkedList<Contest>();
+        Contest contest;
+        while ((contest = updatedContests.poll()) != null)
+            contests.add(contest);
+        return contests;
     }
 }
