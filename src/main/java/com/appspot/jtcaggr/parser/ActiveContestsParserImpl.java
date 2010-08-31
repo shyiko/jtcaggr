@@ -142,7 +142,7 @@ public class ActiveContestsParserImpl implements ActiveContestsParser {
     }
 
     private int parseMoney(String money) {
-        money = money.replace("$", "");
+        money = money.replace("$", "").replace(",", "");
         int dotIndex = money.indexOf(".");
         if (dotIndex > -1)
             money = money.substring(0, dotIndex);
